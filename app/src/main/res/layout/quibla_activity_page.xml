@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.Translation.TranslationPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/quibla_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/quibla_tabs"
+            android:background="#d2d8db"
+            app:tabBackground="@drawable/tab_color_selector_pary_page"
+            app:tabTextColor="#70727e"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:tabSelectedTextColor="#FFFFFF"
+            app:tabIndicatorColor="#604c4d"
+            android:layout_weight="1" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

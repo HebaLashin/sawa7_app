@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_land_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.activity.LandLogin">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:id="@+id/Liner1"
+            app:layout_heightPercent="19%"
+            app:layout_marginTopPercent="1%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/btnLandLoginFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/facebook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Liner2"
+            android:layout_below="@+id/Liner1"
+            app:layout_heightPercent="19%"
+            app:layout_marginTopPercent="1%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/btnLandLoginTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/twitter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Liner3"
+            android:layout_below="@+id/Liner2"
+            app:layout_heightPercent="19%"
+            app:layout_marginTopPercent="1%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/btnLandLoginInstgram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/instgram" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Liner4"
+            android:layout_below="@+id/Liner3"
+            app:layout_heightPercent="19%"
+            app:layout_marginTopPercent="1%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/btnLandLoginGimalEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/gmail" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Liner5"
+            android:layout_below="@+id/Liner4"
+            app:layout_heightPercent="19%"
+            app:layout_marginTopPercent="1%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/btnLandLoginLinkedin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/linkedin" />
+        </LinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+</android.support.constraint.ConstraintLayout>

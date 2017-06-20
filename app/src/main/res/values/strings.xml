@@ -1,0 +1,154 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Sawwa7</string>
+    <string name="app_id">260959857596647</string>
+    <string name="title_activity_login_main">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_deep_link">DeepLinkActivity</string>
+    <string name="title_activity_api">ApiActivity</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="description">Displays and alerts with the daily Muslim prayer times.</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="stop">Stop</string>
+    <string name="today">Today</string>
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">`Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="ishaa">`Ishaa\'</string>
+    <string name="next_fajr">Next Fajr</string>
+    <string name="sdefault">Default</string>
+    <string name="error_playing_alert">Error Playing Alert</string>
+    <string name="error_playing_custom_file">Custom File Error</string>
+    <string name="location_not_set"><u>Location Not Set</u>\n\nPlease enable the device\'s GPS or set your location manually through settings.</string>
+    <string name="time_for">Time for <xliff:g id="time_name">%1$s</xliff:g></string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="extreme">Extreme</string>
+    <string name="qibla">Qibla</string>
+    <string name="compass_disclaimer">Compass works in portrait mode.</string>
+    <string name="bearing_north">1) Bearing North = (1)°</string>
+    <string name="bearing_qibla">2) Bearing Qibla = (1) (+/-) (2)° = (3)°</string>
+    <string name="settings">Settings</string>
+    <string name="bismillah_on_boot_up_title">Basmala</string>
+    <string name="bismillah_on_boot_up_summary">Recite basmala on boot up</string>
+    <string name="notification">Notifications</string>
+    <string name="none">None</string>
+    <string name="beep">Beep</string>
+    <string name="adhan">Adhan</string>
+    <string name="custom">Custom</string>
+    <string name="file_path">File Path</string>
+    <string name="file_path_example">File Path ex. /sdcard/sound.mp3</string>
+    <string name="sinterface">Interface</string>
+    <string name="advanced">Advanced</string>
+    <string name="daylight_savings">, Daylight Savings</string>
+    <string name="lookup_gps">Lookup GPS</string>
+    <string name="system_time_zone">System Time Zone</string>
+    <string name="gmt">GMT</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="calculation">Calculation</string>
+    <string name="egypt_survey">Egyptian General Authority of Survey</string>
+    <string name="karachi_shaf">Shaf`i - Karachi University of Islamic Sciences</string>
+    <string name="karachi_hanaf">Hanafi - Karachi University of Islamic Sciences</string>
+    <string name="north_america">Islamic Society of North America</string>
+    <string name="muslim_league">Muslim World League</string>
+    <string name="umm_alqurra">Umm Al-Qurra, Saudi Arabia</string>
+    <string name="fixed_ishaa">Fixed `Ishaa\' Interval (always 90)</string>
+    <string name="altitude">Altitude</string>
+    <string name="pressure">Pressure</string>
+    <string name="temperature">Temperature</string>
+    <string name="rounding">Rounding</string>
+    <string name="normal">Normal</string>
+    <string name="special">Special</string>
+    <string name="aggressive">Aggressive</string>
+    <string name="offset">Offset</string>
+    <string name="minutes">minutes</string>
+    <string name="language">Language</string>
+    <string name="anno_hegirae">AH</string>
+    <string name="did_you_pray">Did you already do <xliff:g id="time_name">%1$s</xliff:g> prayer?</string>
+    <string name="yes">Yes</string>
+    <string name="snooze">Snooze</string>
+    <string name="locationTxt">Continuous Location Update</string>
+    <string name="action_settings">Settings</string>
+    <string name="degrees_celsius" translatable="false">\u00B0C</string>
+    <string name="degree_minute_second" translatable="false"><xliff:g id="degree">%1$d</xliff:g>\u00B0 <xliff:g id="minute">%2$d</xliff:g>\u2019 <xliff:g id="second">%3$s</xliff:g>\u201D</string>
+    <string name="next_time_marker" translatable="false">&gt;\u0020</string>
+    <string name="next_time_marker_reverse" translatable="false">&lt;</string>
+
+    <!-- Array -->
+    <string name="wight_prompt">Select Mass</string>
+    <string name="Length_prompt">Select Length</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tem_prompt">Select Temperature Unite</string>
+    <!-- end -->
+    <string name="title_activity_display">Conversion Results</string>
+    <string name="title_error_no_network">No Network</string>
+    <string name="title_about">About</string>
+    <string name="message_error_no_network">You must have a working internet connection!</string>
+    <string name="message_about">Author: Mohamed Ali Heeba \nLast Updated:\n%1$s</string>
+
+    <!-- warnings -->
+    <string name="warning_name_empty">Name cannot be empty</string>
+    <string name="warning_name_lowercase">Name should start from an uppercase letter</string>
+    <string name="warning_email_empty">Email cannot be empty</string>
+    <string name="warning_email_invalid">Invalid email format</string>
+    <string name="warning_password_empty">Password cannot be empty</string>
+    <string name="warning_passwords_do_not_match">Passwords do not match</string>
+
+    <!-- info messages -->
+    <string name="info_registered_template">Registered. ObjectId: %s</string>
+    <string name="info_registered_success">Registered successfully</string>
+    <string name="info_logged_in">Logged in. ObjectId: %s</string>
+
+    <!-- loading messages -->
+    <string name="loading_empty">Loading…</string>
+    <string name="loading_register">Sending registration request…</string>
+    <string name="loading_login">Logging in…</string>
+
+
+    <string name="translatePrompt">Select Convert Language</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_el_quibla_main">ElQuiblaMain</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="selectCur">Select Currency</string>
+    <string name="title_activity_translation_main">TranslationMainActivity</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uniquestartup.mohamedaliheeba.sawa7">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".CustomTextView.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login_API.LoginFacebook"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login_API.LoginTwiter"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login_API.instgram.AllMediaFiles"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login_API.instgram.Relationship"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login_API.instgram.LoginInstagram"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login_API.liknedIn.LoginLinkdin"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login_API.liknedIn.UserProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider"
+            android:exported="true" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3065ac46e5df1e85836041c6595cab867ffdf9ff" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".CoreApp.TranslateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <!-- ****************************************************************************** -->
+        <activity
+            android:name=".UnitConverter.Currencypackage.Currency_activities.CurrencyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UnitConverter.Currencypackage.Currency_activities.DisplayCurrencyActivity"
+            android:label="@string/title_activity_display"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Elquibla.uz.efir.muazzin.Muazzin"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Elquibla.uz.efir.muazzin.SettingsActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".Elquibla.islam.adhanalarm.receiver.StartNotificationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Elquibla.islam.adhanalarm.service.StartNotificationService" />
+        <service
+            android:name=".Elquibla.uz.efir.muazzin.NotificationService"
+            android:enabled="true" />
+        <service android:name="com.backendless.AndroidService" />
+
+        <receiver
+            android:name=".Elquibla.islam.adhanalarm.widget.TimetableWidgetProvider"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_timetable" />
+        </receiver>
+        <receiver
+            android:name=".Elquibla.islam.adhanalarm.widget.NextNotificationWidgetProvider"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_next_notification" />
+        </receiver>
+        <!-- ************************************************************************************** -->
+        <activity
+            android:name=".activity.SplachScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".GPSTrack.LocationValue"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".UnitConverter.UniteConverterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".UnitConverter.WeatherPackage.WeatherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UnitConverter.Weightpackage.WeightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UnitConverter.LenghtPackage.LengthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".UnitConverter.Currencypackage.Currency_activities.MainCurrencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeLine.TimelineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeLine.AddTimelineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LandLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CityGuide.City_GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Welcom.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Translation.TranslationPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ElQuiblaNow.QuiblaCollection"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

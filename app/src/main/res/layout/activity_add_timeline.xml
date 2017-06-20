@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_timeline"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.TimeLine.AddTimelineActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tack photo from camera "
+        android:id="@+id/btnOpencam"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tack photo from Gallery "
+        android:id="@+id/btnChooseFile"
+        />
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:id="@+id/image_place"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload"
+        android:id="@+id/btnupload"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show timeline"
+        android:id="@+id/btnupShowTimeline"
+        />
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

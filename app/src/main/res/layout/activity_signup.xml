@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0382e1"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.activity.SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@mipmap/singupbar">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/singuppage">
+
+
+                    <LinearLayout
+                        android:id="@+id/Liner1"
+                        app:layout_heightPercent="45%"
+                        app:layout_widthPercent="100%">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Liner2"
+                        android:layout_below="@+id/Liner1"
+                        android:orientation="vertical"
+                        app:layout_heightPercent="46%"
+                        app:layout_widthPercent="100%">
+
+                        <EditText
+                            android:id="@+id/input_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:ellipsize="start"
+                            android:gravity="center_horizontal"
+                            android:hint=" Email Address "
+                            android:inputType="textEmailAddress"
+                            android:padding="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/accent"
+                            android:textColorHint="@color/accent" />
+
+                        <EditText
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:ellipsize="start"
+                            android:gravity="center_horizontal"
+                            android:hint=" Create Username "
+                            android:inputType="text"
+                            android:padding="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/accent"
+                            android:textColorHint="@color/accent" />
+
+                        <EditText
+                            android:id="@+id/input_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:ellipsize="start"
+                            android:gravity="center_horizontal"
+                            android:hint=" Password"
+                            android:inputType="textPassword"
+                            android:padding="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/accent"
+                            android:textColorHint="@color/accent" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_signup"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:padding="12dp"
+                            android:text=" Create an account "
+                            android:textAllCaps="false"
+                            android:textColor="#6c6d7a" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Liner3"
+                        android:layout_below="@+id/Liner2"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="9%"
+                        app:layout_widthPercent="100%">
+
+                        <TextView
+                            android:id="@+id/link_login"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="By signing up you agree to the terms of use"
+                            android:textColor="#4a4d55"
+                            android:textSize="15dip" />
+                    </LinearLayout>
+
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@mipmap/singupbar">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.UnitConverter.Weightpackage.WeightActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+                <LinearLayout
+                    android:padding="20dp"
+                    app:layout_heightPercent="65%"
+                    app:layout_marginLeftPercent="15%"
+                    app:layout_marginTopPercent="20%"
+                    app:layout_widthPercent="85%">
+
+                    <com.uniquestartup.mohamedaliheeba.sawa7.Elquibla.islam.adhanalarm.view.QiblaCompassView
+                        android:id="@+id/qibla_compass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

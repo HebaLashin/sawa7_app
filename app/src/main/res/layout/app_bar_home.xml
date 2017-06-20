@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.activity.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D1D1D">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#4a86e8">
+
+                <Button
+                    android:id="@+id/btnNavigation"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/navigationicon" />
+
+                <TextView
+                    android:id="@+id/H_txttollbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tkit Tools"
+                    android:textColor="#f6f8fe"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.Toolbar>
+
+            <include layout="@layout/content_main_home" />
+        </android.support.design.widget.AppBarLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

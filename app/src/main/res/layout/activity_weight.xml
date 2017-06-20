@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.UnitConverter.Weightpackage.WeightActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/linerlayoutshapraduis"
+                android:orientation="vertical"
+                app:layout_heightPercent="43%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="6%"
+                app:layout_widthPercent="65%">
+
+                <EditText
+                    android:id="@+id/W_txtAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@android:color/transparent"
+                    android:hint="       "
+                    android:maxLength="6"
+                    android:numeric="decimal"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtspinnerFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="   "
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/linerlayoutshapraduis2"
+                android:orientation="vertical"
+                app:layout_heightPercent="20%"
+                app:layout_marginLeftPercent="51%"
+                app:layout_marginTopPercent="8%"
+                app:layout_widthPercent="30%">
+
+                <Button
+                    android:id="@+id/btnSpinnerfrom"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/spinner" />
+
+                <com.uniquestartup.mohamedaliheeba.sawa7.CustomControls.NoDefaultSpinner
+                    android:id="@+id/W_spinnerFrom"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/WeightCat"
+                    android:padding="20dp"
+                    android:visibility="invisible"
+                    android:popupBackground="#d0bfbd"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/linerlayoutshapraduis"
+                android:orientation="vertical"
+                app:layout_heightPercent="43%"
+                app:layout_marginLeftPercent="30%"
+                app:layout_marginTopPercent="52%"
+                app:layout_widthPercent="65%">
+
+                <TextView
+                    android:id="@+id/W_txresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="55dp"
+                    android:maxLength="9"
+                    android:text=" "
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtspinnerTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="     "
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/linerlayoutshapraduis2"
+                android:orientation="vertical"
+                app:layout_heightPercent="20%"
+                app:layout_marginLeftPercent="23%"
+                app:layout_marginTopPercent="52%"
+                app:layout_widthPercent="30%">
+
+                <Button
+                    android:id="@+id/btnSpinnerto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/spinner" />
+
+                <com.uniquestartup.mohamedaliheeba.sawa7.CustomControls.NoDefaultSpinner
+                    android:id="@+id/W_spinnerTo"
+                    android:visibility="invisible"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/WeightCat"
+                    android:padding="20dp"
+                    android:popupBackground="#d0bfbd"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+        <!--   <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:layout_gravity="center_vertical"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="12dp"
+               android:paddingTop="12dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="From"
+                   android:textColor="@color/accent"
+                    />
+
+               <Spinner
+
+                   android:id="@+id/W_spinnerFrom"
+                   android:layout_width="300dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:background="@color/com_facebook_blue"
+                   android:entries="@array/WeightCat"
+                   android:padding="20dp"
+                   android:prompt="@string/wight_prompt"
+                   android:spinnerMode="dialog" />
+               <TextView
+                   android:layout_marginTop="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="To"
+                   android:textColor="@color/accent"
+                    />
+
+               <Spinner
+                   android:id="@+id/W_spinnerTo"
+                   android:layout_width="300dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+
+                   android:background="@color/com_facebook_blue"
+                   android:entries="@array/WeightCat"
+                   android:padding="20dp"
+                   android:prompt="@string/wight_prompt"
+                   android:spinnerMode="dialog" />
+
+               <EditText
+                   android:numeric="decimal"
+                   android:id="@+id/W_txtAmount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:textColorHint="@color/accent"
+                   android:hint="Enter Amount "
+                   android:padding="10dp" />
+
+               <Button
+                   android:id="@+id/W_btnSubmit"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:text="Convert"
+                   android:textColor="@color/accent"
+                   android:background="#f54337"
+                   />
+
+               <TextView
+                   android:id="@+id/W_txresult"
+                   android:layout_marginTop="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:textColor="@color/com_facebook_button_background_color_disabled"
+                   android:textSize="20dp"
+                   />
+           </LinearLayout>-->
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

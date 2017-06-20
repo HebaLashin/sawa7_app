@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_length"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.UnitConverter.LenghtPackage.LengthActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e1e1e1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/haflecircle"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:maxLength="6"
+                            android:id="@+id/L_txtAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="               "
+                            android:background="@android:color/transparent"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:numeric="decimal"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linPart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/smihalfcir"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtFromLength"
+                                app:layout_widthPercent="68%"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="40dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <Button
+                                android:id="@+id/btnFromLength"
+                                app:layout_widthPercent="12%"
+                                app:layout_heightPercent="40%"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="@mipmap/spinner"
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/txtFromLength"
+                                android:layout_toEndOf="@+id/txtFromLength" />
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </LinearLayout>
+
+                    <com.uniquestartup.mohamedaliheeba.sawa7.CustomControls.NoDefaultSpinner
+                        android:id="@+id/L_spinnerFrom"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:alpha="0.4"
+                        android:entries="@array/LengthCat"
+                        android:gravity="right"
+                        android:padding="20dp"
+                        android:popupBackground="#d0bfbd"
+                        android:prompt="@string/Length_prompt"
+                        android:spinnerMode="dropdown"
+                        android:visibility="invisible"
+                        app:layout_marginTopPercent="50%"
+                        app:layout_widthPercent="50%" />
+
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/btnconvert">
+
+                        <Button
+                            android:id="@+id/L_btnSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/tw__transparent" />
+
+                    </LinearLayout>
+
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linPart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/tragertsmihlafcir"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtToLength"
+                                app:layout_widthPercent="68%"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="40dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25dp" />
+
+                            <Button
+                                android:id="@+id/btnToLength"
+                                app:layout_widthPercent="12%"
+                                app:layout_heightPercent="40%"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="@mipmap/spinner"
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/txtToLength"
+                                android:layout_toEndOf="@+id/txtToLength" />
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </LinearLayout>
+
+                    <com.uniquestartup.mohamedaliheeba.sawa7.CustomControls.NoDefaultSpinner
+                        android:id="@+id/L_spinnerTo"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:alpha="0.4"
+                        android:entries="@array/LengthCat"
+                        android:gravity="right"
+                        android:padding="20dp"
+                        android:popupBackground="#d0bfbd"
+                        android:prompt="@string/Length_prompt"
+                        android:spinnerMode="dropdown"
+                        android:visibility="invisible"
+                        app:layout_marginTopPercent="50%"
+                        app:layout_widthPercent="50%" />
+
+
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/underhaflecircle"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/L_txresult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:numeric="decimal"
+                            android:text="                                   "
+                            android:textColor="#ffffff"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_gravity="center_vertical"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:paddingBottom="12dp"
+             android:paddingTop="12dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="From"
+                 android:textColor="@color/accent"
+                 />
+
+             <Spinner
+
+                 android:id="@+id/L_spinnerFrom"
+                 android:layout_width="300dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:background="@color/com_facebook_blue"
+                 android:entries="@array/LengthCat"
+                 android:padding="20dp"
+                 android:prompt="@string/Length_prompt"
+                 android:spinnerMode="dialog" />
+             <TextView
+                 android:layout_marginTop="20dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="To"
+                 android:textColor="@color/accent"
+                 />
+
+             <Spinner
+                 android:id="@+id/L_spinnerTo"
+                 android:layout_width="300dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="25dp"
+
+                 android:background="@color/com_facebook_blue"
+                 android:entries="@array/LengthCat"
+                 android:padding="20dp"
+                 android:prompt="@string/Length_prompt"
+                 android:spinnerMode="dialog" />
+
+             <EditText
+                 android:numeric="decimal"
+                 android:id="@+id/L_txtAmount"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="25dp"
+
+                 android:textColorHint="@color/accent"
+                 android:hint="Enter Amount "
+                 android:padding="10dp" />
+
+             <Button
+                 android:id="@+id/L_btnSubmit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="25dp"
+                 android:text="Convert"
+                 android:textColor="@color/accent"
+                 android:background="#f54337"
+                 />
+
+             <TextView
+                 android:id="@+id/L_txresult"
+                 android:layout_marginTop="20dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text=""
+                 android:textColor="@color/com_facebook_button_background_color_disabled"
+                 android:textSize="20dp"
+                 />
+         </LinearLayout>-->
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

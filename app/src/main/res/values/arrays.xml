@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="calculation_methods">
+        <item>@string/egypt_survey</item>
+        <item>@string/karachi_shaf</item>
+        <item>@string/karachi_hanaf</item>
+        <item>@string/north_america</item>
+        <item>@string/muslim_league</item>
+        <item>@string/umm_alqurra</item>
+        <item>@string/fixed_ishaa</item>
+    </array>
+
+    <array name="rounding_types">
+        <item>@string/none</item>
+        <item>@string/normal</item>
+        <item>@string/special</item>
+        <item>@string/aggressive</item>
+    </array>
+
+    <array name="notification_methods">
+        <item>@string/none</item>
+        <item>@string/sdefault</item>
+        <item>@string/beep</item>
+        <item>@string/adhan</item>
+        <!--item>@string/custom</item-->
+    </array>
+
+    <string-array name="hijri_months">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabi` al-awwal</item>
+        <item>Rabi` al-thani</item>
+        <item>Jumada al-awwal</item>
+        <item>Jumada al-thani</item>
+        <item>Rajab</item>
+        <item>Sha`aban</item>
+        <item>Ramadan</item>
+        <item>Shawwal</item>
+        <item>Dhu al-Qi`dah</item>
+        <item>Dhu al-Hijjah</item>
+    </string-array>
+
+    <array name="languages" translatable="false">
+        <item>@string/sdefault</item>
+        <item>Ўзбекча</item>
+        <item>العربية</item>
+        <item>Deutsch</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Indonesian</item>
+        <item>Italiano</item>
+        <item>Türkçe</item>
+        <item>Русский</item>
+    </array>
+
+    <string-array name="WeightCat">
+        <item>Tonne</item>
+        <item>Kilogram</item>
+        <item>Gram</item>
+        <item>Milligram</item>
+        <item>Microgram</item>
+        <item>Imperial ton</item>
+        <item>US ton</item>
+        <item>Stone</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+    </string-array>
+
+    <string-array name="LengthCat">
+        <item>Millimeter</item>
+        <item>Centimeter</item>
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Inch</item>
+        <item>Foot</item>
+        <item>Yard</item>
+        <item>Mile</item>
+    </string-array>
+
+
+    <string-array name="temp">
+        <item>Celsius</item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+
+    </string-array>
+
+    <string-array name="trans">
+        <item>From Arabic To English</item>
+        <item>From English To Arabic</item>
+    </string-array>
+
+
+</resources>

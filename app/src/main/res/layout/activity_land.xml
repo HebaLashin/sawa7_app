@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_land"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.activity.LandActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/bglandimg">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/S_textView"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btnSigninLand"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgbutton"
+                        android:text="Sign In"
+                        android:textAllCaps="false"
+                        android:textColor="#0382e1" />
+
+                    <Button
+                        android:id="@+id/btnSignupLand"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgbutton"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="#0382e1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnConnectWithTwitterLand"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:background="#0382e1"
+                        android:text="Social Network"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/S_textView"
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:src="@mipmap/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnSigninLand"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgbutton"
+                    android:text="Sign In"
+                    android:textColor="#ffff" />
+
+                <Button
+                    android:id="@+id/btnSignupLand"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgbutton"
+                    android:text="Sign Up"
+                    android:textColor="#ffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnConnectWithTwitterLand"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/bgbutton"
+                    android:text="Connect With Social Network"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>-->
+</android.support.constraint.ConstraintLayout>

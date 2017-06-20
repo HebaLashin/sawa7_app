@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.activity.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D1D1D">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#ffffff">
+
+                <Button
+                    android:id="@+id/btnback"
+                    android:layout_width="15dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/arrowleft" />
+
+                <TextView
+                    android:id="@+id/H_txttollbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="CONVERSION"
+                    android:textColor="#333333"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.Toolbar>
+
+            <include layout="@layout/content_unite_converter" />
+        </android.support.design.widget.AppBarLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

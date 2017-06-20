@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_linkdin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.Login_API.liknedIn.LoginLinkdin">
+   <RelativeLayout
+
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+
+
+
+       <Button
+           android:id="@+id/login_button"
+           android:background="@drawable/signinlargeactive"
+           android:layout_width="200dp"
+           android:layout_height="40dp"
+           android:layout_gravity="center_vertical"
+           android:gravity="center"
+           android:paddingTop="12dp"
+           android:paddingBottom="12dp"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"/>
+
+
+
+
+   </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

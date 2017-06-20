@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "725872759898",
+    "project_id": "infra-chimera-154817"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725872759898:android:197eab333a5b957f",
+        "android_client_info": {
+          "package_name": "com.uniquestartup.mohamedaliheeba.sawa7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725872759898-olfstrpdfu4q2bud23giefgmrtrs3o88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uniquestartup.mohamedaliheeba.sawa7",
+            "certificate_hash": "764857310886763FF62C9CB6E35C82EEB69BEE5C"
+          }
+        },
+        {
+          "client_id": "725872759898-hu9j8l567nbb5huuqqgothfismqjds7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzU8G5vaOdptL4spMBONLD4VVBjiiwyEk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

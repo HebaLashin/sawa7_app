@@ -1,0 +1,80 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.uniquestartup.mohamedaliheeba.sawa7"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    // This is handled for you by the 2.0+ Gradle Plugin
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/microsoft-translator-java-api-0.6.1.jar')
+    compile('com.twitter.sdk.android:twitter:1.13.3@aar') { transitive = true; }
+    compile 'com.android.support:percent:23.3.0'
+    compile project(':linkedin-sdk')
+    compile files('libs/hvjavacal.jar')
+    compile files('libs/backendless.jar')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha3'
+    compile 'com.facebook.android:facebook-android-sdk:4.15.0'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.squareup.retrofit:retrofit:1.7.1'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.github.castorflex.smoothprogressbar:library:1.0.0'
+    compile 'nl.qbusict:cupboard:2.1.1'
+    compile 'joda-time:joda-time:2.5'
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support:support-annotations:23.4.0'
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#0382e1"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <android.support.percent.PercentRelativeLayout
+        android:background="@mipmap/backnavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            app:layout_marginTopPercent="5%"
+            app:layout_widthPercent="20%">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/H_profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/usernavigation" />
+
+            <ImageView
+                android:id="@+id/H"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/timenavigation" />
+
+            <ImageView
+                android:id="@+id/Hd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/medianavigation" />
+
+            <ImageView
+                android:id="@+id/He"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/maultinavigation" />
+
+            <ImageView
+                android:id="@+id/Hs"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/settingnavigation" />
+
+
+        </LinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

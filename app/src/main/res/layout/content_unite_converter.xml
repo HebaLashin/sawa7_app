@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_unite_converter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e11c78"
+    tools:context="com.uniquestartup.mohamedaliheeba.sawa7.UnitConverter.UniteConverterActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/conversionscreenbg"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/U_btnTemperature"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/temitem"
+                        app:civ_border_color="#e11c78"
+                        app:civ_border_width="10dp"
+                        app:layout_marginLeftPercent="7%"
+                        app:layout_marginTopPercent="24%"
+                        tools:layout_editor_absoluteX="-100dp"
+                        tools:layout_editor_absoluteY="10dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/U_btnWeight"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/weightitem"
+                        app:civ_border_color="#f54337"
+                        app:civ_border_width="10dp"
+                        app:layout_marginLeftPercent="7%"
+                        app:layout_marginTopPercent="66%"
+                        tools:layout_editor_absoluteX="-100dp"
+                        tools:layout_editor_absoluteY="10dp" />
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/U_btnCurrency"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_marginLeftPercent="9%"
+                        app:layout_marginTopPercent="4%"
+                        android:src="@mipmap/currencyitem"
+                        app:civ_border_color="#0382e1"
+                        app:civ_border_width="10dp"
+                        tools:layout_editor_absoluteX="-100dp"
+                        tools:layout_editor_absoluteY="10dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/U_btnLength"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_marginLeftPercent="7%"
+                        app:layout_marginTopPercent="46%"
+                        android:src="@mipmap/lenghtitem"
+                        app:civ_border_color="#d32f2e"
+                        app:civ_border_width="10dp"
+                        tools:layout_editor_absoluteX="-100dp"
+                        tools:layout_editor_absoluteY="10dp" />
+
+
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
